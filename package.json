@@ -1,0 +1,32 @@
+{
+  "name": "apt-genmon-panel",
+  "private": true,
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogFile": "docs/CHANGELOG.md"
+        }
+      ],
+      [
+        "@semantic-release/git",
+        {
+          "assets": ["docs/CHANGELOG.md"]
+        }
+      ]
+    ]
+  },
+  "dependencies": {
+    "semantic-release": "^20.1.0"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.2",
+    "@semantic-release/git": "^10.0.1"
+  }
+}

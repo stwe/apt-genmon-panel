@@ -1,0 +1,7 @@
+# Directories
+.vs/
+.idea/
+node_modules
+
+# Files
+
