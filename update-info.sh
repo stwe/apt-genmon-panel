@@ -21,5 +21,5 @@ else
     # system needs to be updated
     AVAIL="<img>/usr/share/icons/Tango/16x16/status/software-update-urgent.png</img>"
     echo -e "<tool><span foreground='#FF0000'>Click on the icon to update the system.</span></tool>"
-    echo -e "${AVAIL}<txt> $SIMULATION updates available.</txt><click>exo-open --launch TerminalEmulator sudo apt dist-upgrade && "$U" && "$SIMULATION"</click>"
+    echo -e "${AVAIL}<txt> $SIMULATION updates available.</txt><click>exo-open --launch TerminalEmulator sudo apt dist-upgrade</click>"
 fi
