@@ -27,5 +27,5 @@ else
     echo "<txt>$updates updates available.</txt>"
     echo -e "<tool><span foreground='#FF0000'>Click on the icon to update the system.</span></tool>"
     echo "<img>/usr/share/icons/Tango/16x16/status/software-update-urgent.png</img>"
-    echo "<click>exo-open --launch TerminalEmulator bash -c 'sudo apt dist-upgrade;echo "press a key";read'</click>"
+    echo "<click>exo-open --launch TerminalEmulator bash -c 'sudo apt dist-upgrade && xfce4-panel --plugin-event=genmon-13:refresh:bool:true;echo "press a key";read'</click>"
 fi
