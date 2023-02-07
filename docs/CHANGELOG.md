@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/stwe/apt-genmon-panel/compare/v1.0.1...v1.0.2) (2023-02-07)
+
+
+### Bug Fixes
+
+* refresh script after dist-upgrade ([773bf5f](https://github.com/stwe/apt-genmon-panel/commit/773bf5f49c41cd4bff0b420263cff5bfd4d90c57))
+
 ## [1.0.1](https://github.com/stwe/apt-genmon-panel/compare/v1.0.0...v1.0.1) (2023-02-06)
 
 
