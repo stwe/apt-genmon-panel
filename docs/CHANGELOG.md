@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/stwe/apt-genmon-panel/compare/v1.0.2...v1.0.3) (2023-02-10)
+
+
+### Bug Fixes
+
+* refresh plugin ([188a25c](https://github.com/stwe/apt-genmon-panel/commit/188a25c7cb42cc9b3a8952cb6a02e2b1285c2893))
+
 ## [1.0.2](https://github.com/stwe/apt-genmon-panel/compare/v1.0.1...v1.0.2) (2023-02-07)
 
 
