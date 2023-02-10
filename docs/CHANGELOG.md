@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/stwe/apt-genmon-panel/compare/v1.0.3...v1.1.0) (2023-02-10)
+
+
+### Features
+
+* add list of updatable packages ([bc422a9](https://github.com/stwe/apt-genmon-panel/commit/bc422a9daafc4f2388bad9530047b161f5c8228b))
+
 ## [1.0.3](https://github.com/stwe/apt-genmon-panel/compare/v1.0.2...v1.0.3) (2023-02-10)
 
 
