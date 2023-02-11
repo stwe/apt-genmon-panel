@@ -2,30 +2,52 @@
 
 A simple script for the xfce4-genmon-plugin to show the number of current updates for a Debian system.
 
-```bash
-# Think twice if this is ok for you and then add the
-# following line to your sudoers. This only affects the
-# update of the package list. Installing and removing
-# packages still requires entering the password.
 
+It is a workaround as long as the package-update-indicator doesn't work with the new Debian Bookworm. See bug: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1025907
+
+
+## Installation
+
+You just need `xfce4-panel` and `xfce4-genmon-plugin`. Also make sure that the Tango Theme is available in `/usr/share/icons`.
+
+Clone the project in your home directory.
+
+### Edit sudoers
+
+Think twice if this is ok for you and then add the following line to your `sudoers`. This only affects the update of the package list. Installing and removing packages still requires entering the password.
+
+
+```bash
 your_username ALL=(ALL) NOPASSWD:/usr/bin/apt update
 ```
 
-To refresh the plugin, the following command is used:
+### Chmod
+
+Make `update-info.sh` and `upgrade.sh` executable (chmod 755).
+
+
+### Add a Generic Monitor
+
+Add one Generic Monitor for `update-info.sh` and place it wherever you want.
+
+Finally, lines 18 in `update-info.sh` and 4 in `upgrade.sh` need to be edited.
 
 ```bash
 # update-info.sh
 
-echo "<click>xfce4-panel --plugin-event=genmon-X:refresh:bool:true</click>"
+18| echo "<click>xfce4-panel --plugin-event=genmon-X:refresh:bool:true</click>"
 ```
 
 
 ```bash
 # upgrade.sh
 
-xfce4-panel --plugin-event=genmon-X:refresh:bool:true
+4| xfce4-panel --plugin-event=genmon-X:refresh:bool:true
 ```
+
 where “genmon-X” is the widget name of the particular genmon instance. To get this name, go to the panel properties screen and on the Items tab, hover your mouse over the genmon plugin to get it's internal name.
 
 
-The script is a workaround as long as the package-update-indicator doesn't work with the new Debian Bookworm. See bug: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1025907
+## License
+
+This project is licensed under the GPL-2.0 License, see [LICENSE](https://github.com/stwe/apt-genmon-panel/blob/main/LICENSE) for more information.
