@@ -2,9 +2,11 @@
 
 A simple script for the xfce4-genmon-plugin to show the number of current updates for a Debian system.
 
-
 It is a workaround as long as the package-update-indicator doesn't work with the new Debian Bookworm. See bug: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1025907
 
+<img src="https://github.com/stwe/apt-genmon-panel/blob/main/docs/devlog/noUpdates.png" width="201" height="49" alt="" />
+
+<img src="https://github.com/stwe/apt-genmon-panel/blob/main/docs/devlog/update.png" width="314" height="194" alt="" />
 
 ## Installation
 
